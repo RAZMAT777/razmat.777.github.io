@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Razmik Mirijanyan | Portfolio</title>
+  
+  <!-- AOS стили -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(180deg, #0d1117, #161b22);
+      color: #e6edf3;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #161b22;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      animation: fadeInDown 2s ease;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #8b949e;
+      animation: fadeInUp 2s ease;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #21262d;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    nav a {
+      color: #e6edf3;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #58a6ff;
+    }
+    .lang-switch {
+      position: absolute;
+      right: 20px;
+      top: 15px;
+    }
+    .lang-switch button {
+      background: #30363d;
+      color: #e6edf3;
+      border: none;
+      padding: 5px 10px;
+      margin-left: 5px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .lang-switch button:hover {
+      background: #58a6ff;
+      color: #fff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-left: 5px solid #58a6ff;
+      padding-left: 10px;
+      margin-bottom: 30px;
+      font-size: 2rem;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #161b22;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px) scale(1.05);
+      background: #1c2128;
+    }
+    footer {
+      background: #161b22;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+    footer a {
+      color: #58a6ff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    /* Анимации */
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(50px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Razmik Mirijanyan</h1>
+    <p id="subtitle">Программист | React · Node.js · Python · CAM/CAD · Мехатроника</p>
+    <div class="lang-switch">
+      <button onclick="setLang('ru')">RU</button>
+      <button onclick="setLang('en')">EN</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about" id="nav-about">Обо мне</a>
+    <a href="#skills" id="nav-skills">Навыки</a>
+    <a href="#projects" id="nav-projects">Проекты</a>
+    <a href="#contacts" id="nav-contacts">Контакты</a>
+  </nav>
+
+  <section id="about" data-aos="fade-up">
+    <h2 id="about-title">Обо мне</h2>
+    <p id="about-text">
+      Я учился 4 года в Политехническом институте и около 8 лет в TUMO технологическом центре.  
+      Имею диплом по мехатронике.  
+      Развиваюсь в программировании и инженерии, совмещаю опыт в <b>React, Node.js, Python, CAM/CAD</b>.
+    </p>
+  </section>
+
+  <section id="skills" data-aos="zoom-in-up">
+    <h2 id="skills-title">Навыки</h2>
+    <div class="skills">
+      <div class="card" id="skill1">⚛ React.js</div>
+      <div class="card" id="skill2">🟢 Node.js</div>
+      <div class="card" id="skill3">🐍 Python</div>
+      <div class="card" id="skill4">⚙️ CAM/CAD</div>
+      <div class="card" id="skill5">🤖 Мехатроника</div>
+    </div>
+  </section>
+
+  <section id="projects" data-aos="fade-right">
+    <h2 id="projects-title">Проекты</h2>
+    <div class="projects">
+      <div class="card" id="proj1">Проект 1 — React App (скоро добавлю ссылку)</div>
+      <div class="card" id="proj2">Проект 2 — Node.js API (скоро добавлю ссылку)</div>
+      <div class="card" id="proj3">Проект 3 — Python Automation Script</div>
+    </div>
+  </section>
+
+  <section id="contacts" data-aos="fade-left">
+    <h2 id="contacts-title">Контакты</h2>
+    <p>📧 Email: <a href="mailto:mirijanyanrazmik@gmail.com">mirijanyanrazmik@gmail.com</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/razmiksnkhchyan" target="_blank">@razmiksnkhchyan</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Razmik Mirijanyan</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    const content = {
+      ru: {
+        subtitle: "Программист | React · Node.js · Python · CAM/CAD · Мехатроника",
+        nav: ["Обо мне","Навыки","Проекты","Контакты"],
+        aboutTitle: "Обо мне",
+        aboutText: "Я учился 4 года в Политехническом институте и около 8 лет в TUMO технологическом центре. Имею диплом по мехатронике. Развиваюсь в программировании и инженерии, совмещаю опыт в React, Node.js, Python, CAM/CAD.",
+        skillsTitle: "Навыки",
+        projectsTitle: "Проекты",
+        proj1: "Проект 1 — React App (скоро добавлю ссылку)",
+        proj2: "Проект 2 — Node.js API (скоро добавлю ссылку)",
+        proj3: "Проект 3 — Python Automation Script",
+        contactsTitle: "Контакты"
+      },
+      en: {
+        subtitle: "Programmer | React · Node.js · Python · CAM/CAD · Mechatronics",
+        nav: ["About Me","Skills","Projects","Contacts"],
+        aboutTitle: "About Me",
+        aboutText: "I studied 4 years at the Polytechnic Institute and about 8 years at the TUMO Technology Center. I hold a diploma in Mechatronics. I am developing in programming and engineering, combining experience in React, Node.js, Python, and CAM/CAD.",
+        skillsTitle: "Skills",
+        projectsTitle: "Projects",
+        proj1: "Project 1 — React App (link coming soon)",
+        proj2: "Project 2 — Node.js API (link coming soon)",
+        proj3: "Project 3 — Python Automation Script",
+        contactsTitle: "Contacts"
+      }
+    };
+
+    function setLang(lang) {
+      document.getElementById("subtitle").innerText = content[lang].subtitle;
+      document.getElementById("nav-about").innerText = content[lang].nav[0];
+      document.getElementById("nav-skills").innerText = content[lang].nav[1];
+      document.getElementById("nav-projects").innerText = content[lang].nav[2];
+      document.getElementById("nav-contacts").innerText = content[lang].nav[3];
+      document.getElementById("about-title").innerText = content[lang].aboutTitle;
+      document.getElementById("about-text").innerText = content[lang].aboutText;
+      document.getElementById("skills-title").innerText = content[lang].skillsTitle;
+      document.getElementById("projects-title").innerText = content[lang].projectsTitle;
+      document.getElementById("proj1").innerText = content[lang].proj1;
+      document.getElementById("proj2").innerText = content[lang].proj2;
+      document.getElementById("proj3").innerText = content[lang].proj3;
+      document.getElementById("contacts-title").innerText = content[lang].contactsTitle;
+    }
+  </script>
+</body>
+</html>
