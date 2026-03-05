@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razmik Mirijanyan | Landing v2</title>
+  <meta name="description" content="Alternative landing page concept for Razmik Mirijanyan portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles-2.css" />
+</head>
+<body>
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <header class="topbar" id="top">
+    <a class="mark" href="#top" aria-label="Home">RM_02</a>
+    <nav class="dock" aria-label="Sections">
+      <a href="#mission" data-i18n="navMission">Mission</a>
+      <a href="#capabilities" data-i18n="navCapabilities">Capabilities</a>
+      <a href="#work" data-i18n="navWork">Work</a>
+      <a href="#reach" data-i18n="navReach">Reach</a>
+    </nav>
+    <div class="switch" role="group" aria-label="Language">
+      <button class="switch-btn active" data-lang="en" type="button">EN</button>
+      <button class="switch-btn" data-lang="ru" type="button">RU</button>
+    </div>
+    <a class="version-link-2" href="index.html">V1</a>
+  </header>
+
+  <main>
+    <section class="hero reveal" id="mission">
+      <p class="hero-tag" data-i18n="tag">System-Level Developer with Mechatronics DNA</p>
+      <h1 data-i18n="title">Code, circuits, mechanics. One engineering language.</h1>
+      <p class="hero-desc" data-i18n="desc">
+        I build product interfaces, backend logic, and automation flows that behave like a tuned machine: clear tolerances, no wasted motion, full operational focus.
+      </p>
+      <div class="hero-actions">
+        <a href="#work" class="btn solid" data-i18n="ctaWork">Inspect Projects</a>
+        <a href="mailto:mirijanyanrazmik@gmail.com" class="btn wire" data-i18n="ctaContact">Open Channel</a>
+      </div>
+      <div class="status-bar" aria-label="Experience summary">
+        <div>
+          <strong>08</strong>
+          <span data-i18n="stat1">Years in TUMO</span>
+        </div>
+        <div>
+          <strong>04</strong>
+          <span data-i18n="stat2">Polytechnic years</span>
+        </div>
+        <div>
+          <strong>24/7</strong>
+          <span data-i18n="stat3">Builder mindset</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="capabilities reveal" id="capabilities">
+      <div class="heading-row">
+        <p>CAPABILITIES</p>
+        <h2 data-i18n="capTitle">Execution Areas</h2>
+      </div>
+      <div class="matrix">
+        <article>
+          <h3 data-i18n="cap1Title">React Frontend</h3>
+          <p data-i18n="cap1Body">Interface architecture, reusable components, and responsive behavior tuned for real users.</p>
+        </article>
+        <article>
+          <h3 data-i18n="cap2Title">Node.js Services</h3>
+          <p data-i18n="cap2Body">Structured API layers with predictable contracts, practical scaling paths, and clean request flow.</p>
+        </article>
+        <article>
+          <h3 data-i18n="cap3Title">Python Automation</h3>
+          <p data-i18n="cap3Body">Scripts that remove repetitive tasks and lock process quality for everyday operations.</p>
+        </article>
+        <article>
+          <h3 data-i18n="cap4Title">Mechatronics Thinking</h3>
+          <p data-i18n="cap4Body">Mechanical discipline applied to software systems: constraints first, elegance through precision.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="work reveal" id="work">
+      <div class="heading-row">
+        <p>PROJECTS</p>
+        <h2 data-i18n="workTitle">Build Log</h2>
+      </div>
+      <div class="track">
+        <article>
+          <p class="chip">01</p>
+          <h3 data-i18n="work1Title">React Product Console</h3>
+          <p data-i18n="work1Body">Authentication, route control, and data filtering wired for speed and clarity.</p>
+        </article>
+        <article>
+          <p class="chip">02</p>
+          <h3 data-i18n="work2Title">Node API Backbone</h3>
+          <p data-i18n="work2Body">Service endpoints with stable response patterns and practical maintenance strategy.</p>
+        </article>
+        <article>
+          <p class="chip">03</p>
+          <h3 data-i18n="work3Title">Python Ops Scripts</h3>
+          <p data-i18n="work3Body">Automated repeat operations to cut manual load and reduce execution drift.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reach reveal" id="reach">
+      <div class="heading-row">
+        <p>CONTACT</p>
+        <h2 data-i18n="reachTitle">Available for serious builds</h2>
+      </div>
+      <div class="links">
+        <a href="mailto:mirijanyanrazmik@gmail.com">mirijanyanrazmik@gmail.com</a>
+        <a href="https://instagram.com/razmiksnkhchyan" target="_blank" rel="noopener noreferrer">instagram.com/razmiksnkhchyan</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year-2"></span> Razmik Mirijanyan</p>
+  </footer>
+
+  <script src="script-2.js"></script>
+</body>
+</html>
